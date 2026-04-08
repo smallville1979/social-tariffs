@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UK Social Tariffs — cheap broadband, mobile, and energy bills for people on benefits. Universal Credit, PIP, ESA and more. Newcastle NE4 focused.">
+<meta property="og:title" content="Social Tariffs & Cut Your Bills UK 💛">
+<meta property="og:description" content="Social tariff broadband from £12.50/mo, cheap mobile SIMs, switching bonuses, and how to cut every bill. Free guide for benefit claimants.">
+<meta property="og:url" content="https://smallville1979.github.io/social-tariffs/">
+<title>Social Tariffs & Cut Your Bills UK 💛</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#0d0d0d;--card:#161616;--card2:#1e1e1e;
+--gold:#f5c842;--gold2:#e6b830;
+--green:#3ecf8e;--blue:#4a9eff;--red:#ff5c5c;--purple:#b97fff;
+--text:#f0f0f0;--muted:#888;--border:#2a2a2a;
+--r:14px;--r2:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 1rem;overflow-x:auto;white-space:nowrap}
+nav::-webkit-scrollbar{height:2px;background:var(--border)}
+nav::-webkit-scrollbar-thumb{background:var(--gold)}
+.nav-inner{display:inline-flex;gap:0;padding:0}
+.nav-inner a{display:inline-block;padding:.7rem .9rem;font-size:13px;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap}
+.nav-inner a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(245,200,66,.06) 0%,transparent 70%)}
+.hero-flag{font-size:13px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,12vw,8rem);line-height:.95;color:var(--gold);letter-spacing:.02em;margin-bottom:1.5rem}
+.hero-sub{font-size:clamp(1rem,3vw,1.25rem);color:#bbb;max-width:560px;margin:0 auto 2.5rem}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.4rem;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:#000}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-size:11px;color:var(--muted);letter-spacing:.1em;animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat{background:var(--bg);padding:2rem 1rem;text-align:center}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1}
+.stat-label{font-size:12px;color:var(--muted);margin-top:.25rem}
+.alert-bar{background:rgba(245,200,66,.07);border-top:1px solid rgba(245,200,66,.2);border-bottom:1px solid rgba(245,200,66,.2);padding:1rem 1.5rem;text-align:center;font-size:.9rem;color:#e0c96a}
+.alert-bar strong{color:var(--gold)}
+section{padding:5rem 1.5rem;max-width:960px;margin:0 auto}
+.section-tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,200,66,.3);border-radius:20px;padding:.3rem .9rem;margin-bottom:1rem}
+section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,7vw,5rem);line-height:1;color:var(--text);margin-bottom:.5rem}
+.section-intro{font-size:1.05rem;color:#aaa;max-width:600px;margin-bottom:3rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#333;transform:translateY(-2px)}
+.card-icon{font-size:1.75rem;margin-bottom:.75rem;display:block}
+.card h3{font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.card p{font-size:.88rem;color:#999;line-height:1.6}
+.card-badge{display:inline-block;margin-top:.75rem;font-size:11px;padding:.2rem .65rem;border-radius:12px;font-weight:600}
+.badge-green{background:rgba(62,207,142,.12);color:var(--green)}
+.badge-gold{background:rgba(245,200,66,.12);color:var(--gold)}
+.badge-blue{background:rgba(74,158,255,.12);color:var(--blue)}
+.badge-red{background:rgba(255,92,92,.12);color:var(--red)}
+.card-featured{background:linear-gradient(135deg,#1a1a1a 0%,#1e1a0a 100%);border:1px solid rgba(245,200,66,.2);border-radius:var(--r);padding:2rem;margin-bottom:1.5rem}
+.card-featured h3{font-size:1.2rem;font-weight:600;color:var(--gold);margin-bottom:.5rem}
+.card-featured p{color:#bbb;font-size:.93rem;margin-bottom:1rem}
+.tag-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
+.tag{font-size:11px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:.25rem .65rem;color:var(--muted)}
+.cta-card{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem 2rem;margin-top:1.5rem}
+.cta-card p{font-size:.9rem;color:#aaa}
+.cta-card strong{color:var(--text);display:block;margin-bottom:.25rem}
+.warning-box{background:rgba(255,92,92,.06);border:1px solid rgba(255,92,92,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.85rem;color:#ff9999;margin-top:1rem}
+.info-box{background:rgba(74,158,255,.06);border:1px solid rgba(74,158,255,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.88rem;color:#9dc8ff;margin:.75rem 0}
+.info-box strong{color:var(--blue)}
+.gold-box{background:rgba(245,200,66,.05);border:1px solid rgba(245,200,66,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.88rem;color:#e0c96a;margin:.75rem 0}
+.gold-box strong{color:var(--gold)}
+.divider{border:none;border-top:1px solid var(--border);margin:0}
+/* TABLE */
+.tbl-wrap{overflow-x:auto;margin:1.5rem 0;border-radius:var(--r);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;min-width:580px}
+thead{background:var(--card2)}
+th{padding:.75rem 1rem;text-align:left;font-size:.78rem;font-weight:600;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--border)}
+td{padding:.75rem 1rem;font-size:.85rem;color:#bbb;border-bottom:1px solid #1e1e1e}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.02)}
+td strong{color:var(--text)}
+.avail-yes{color:var(--green);font-weight:600}
+.avail-check{color:var(--gold)}
+.avail-no{color:var(--muted)}
+/* SHARE */
+.share-section{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
+.share-section h2{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--text);margin-bottom:.5rem}
+.share-section p{color:var(--muted);margin-bottom:2rem}
+.share-btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.share-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.4rem;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--card2);transition:all .2s;cursor:pointer}
+.share-btn:hover{background:#222;border-color:#444}
+.share-btn.whatsapp:hover{border-color:#25d366;color:#25d366}
+.share-btn.facebook:hover{border-color:#1877f2;color:#1877f2}
+footer{background:var(--card);border-top:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
+footer p{font-size:.82rem;color:var(--muted);line-height:2;max-width:700px;margin:0 auto}
+footer strong{color:#bbb}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);margin-bottom:.5rem}
+@media(max-width:600px){
+.stats{grid-template-columns:repeat(2,1fr)}
+section{padding:3.5rem 1rem}
+.cta-card{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-inner">
+  <a href="#broadband">📡 Broadband</a>
+  <a href="#mobile">📱 Mobile</a>
+  <a href="#switching">💷 Switching Bonus</a>
+  <a href="#energy">⚡ Energy</a>
+  <a href="#bills">📺 All Bills</a>
+  <a href="#noexcuses">🏦 Bank Accounts</a>
+  <a href="https://smallville1979.github.io/benefits-guide/">💛 Benefits Guide</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="max-width:100%;padding:4rem 1.5rem">
+  <p class="hero-flag">🇬🇧 Free Resource — Social Tariffs & Bill Cutting UK</p>
+  <h1>Cut Your<br>Bills<br>Now</h1>
+  <p class="hero-sub">If you're on Universal Credit, PIP, ESA or any benefit — you're probably massively overpaying. Social tariff broadband from £12.50/mo. Social tariff mobile £10/mo. Here's everything.</p>
+  <div class="hero-btns">
+    <a href="#broadband" class="btn btn-gold">📡 Cheap Broadband</a>
+    <a href="#mobile" class="btn btn-outline">📱 Cheap Mobile</a>
+    <a href="#energy" class="btn btn-outline">⚡ Energy Help</a>
+  </div>
+  <p class="scroll-hint">SCROLL ↓</p>
+</section>
+
+<!-- 1 HOUR WARNING -->
+<div class="alert-bar">
+  ⏱️ <strong>This site takes 1 hour to fully read and get help.</strong> Please click every link and view every page — the answer you need is in here somewhere. Don't skim it and give up.
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">£12.50</div><div class="stat-label">Cheapest social tariff broadband/mo</div></div>
+  <div class="stat"><div class="stat-num">£10</div><div class="stat-label">Social tariff mobile SIM/mo</div></div>
+  <div class="stat"><div class="stat-num">£250</div><div class="stat-label">Max switching bonus available</div></div>
+  <div class="stat"><div class="stat-num">£150</div><div class="stat-label">Warm Home Discount off your bill</div></div>
+</div>
+
+<hr class="divider">
+
+<!-- BROADBAND -->
+<section id="broadband">
+  <div class="section-tag">📡 Broadband</div>
+  <h2>Social Tariff<br>Broadband</h2>
+  <p class="section-intro">If you're on UC, PIP, ESA, Pension Credit, JSA, Income Support, Child Tax Credit, Carer's Allowance or Scottish Child Payment — you qualify. Providers <em>do not advertise these</em>. You have to ask.</p>
+
+  <div class="gold-box">
+    <strong>📞 Script — say this exact phrase:</strong><br>
+    "I'm on [Universal Credit / PIP / ESA]. Do you offer a social tariff or discounted broadband plan for benefit claimants?"
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Plan</th><th>Speed</th><th>Price</th><th>Contract</th><th>NE4 / Newcastle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>BT Home Essentials</strong></td><td>Unlimited Fibre Essential</td><td>36Mbps</td><td>£15/mo</td><td>12-month</td><td><span class="avail-yes">✅ Available</span> — Openreach FTTC</td></tr>
+        <tr><td><strong>Virgin Media</strong></td><td>Essential Broadband</td><td>15–54Mbps</td><td>£12.50–£20/mo</td><td>30-day</td><td><span class="avail-check">⚠️ Check coverage</span> — cable network</td></tr>
+        <tr><td><strong>Vodafone</strong></td><td>Fibre 2 Essentials</td><td>73Mbps</td><td>£20/mo</td><td>No exit fee</td><td><span class="avail-yes">✅ Likely available</span> — Openreach</td></tr>
+        <tr><td><strong>TalkTalk</strong></td><td>Social Tariff</td><td>~67Mbps</td><td>£20/mo</td><td>12-month</td><td><span class="avail-yes">✅ Available</span> — FTTC, UC eligible</td></tr>
+        <tr><td><strong>Sky Broadband</strong></td><td>Basics</td><td>~35Mbps</td><td>~£20/mo</td><td>18-month</td><td><span class="avail-check">⚠️ Call to check</span></td></tr>
+        <tr><td><strong>Hyperoptic</strong></td><td>Fair Fibre 50Mb</td><td>57Mbps</td><td>£15/mo</td><td>30-day</td><td><span class="avail-check">⚠️ Apartment buildings only</span></td></tr>
+        <tr><td><strong>Community Fibre</strong></td><td>Social Tariff</td><td>150Mbps</td><td>£12.50/mo</td><td>30-day</td><td><span class="avail-no">❌ London only</span></td></tr>
+        <tr><td><strong>Fibrus</strong></td><td>Social Tariff 50Mb</td><td>50Mbps</td><td>£14.99/mo</td><td>30-day</td><td><span class="avail-no">❌ N. Ireland / rural</span></td></tr>
+        <tr><td><strong>G.Network</strong></td><td>Essential Fibre 50Mb</td><td>50Mbps</td><td>£15/mo</td><td>30-day</td><td><span class="avail-no">❌ London focus</span></td></tr>
+        <tr><td><strong>Truespeed</strong></td><td>Basic</td><td>30Mbps</td><td>£20/mo</td><td>30-day</td><td><span class="avail-no">❌ South West only</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta-card">
+    <div><strong>🔍 Compare Social Tariff Broadband</strong><p>Full UK comparison updated regularly. Find what's available at your postcode.</p></div>
+    <a href="https://www.uswitch.com/broadband/social-tariff/" target="_blank" rel="noopener" class="btn btn-gold" style="flex-shrink:0">Compare on Uswitch →</a>
+  </div>
+  <div class="cta-card" style="margin-top:.75rem">
+    <div><strong>📋 Full ISP Social Tariff List</strong><p>ISPreview keeps a full updated list of every provider offering social tariffs.</p></div>
+    <a href="https://www.ispreview.co.uk/index.php/2022/02/uk-isps-social-tariff-broadband-deals-for-those-on-benefits.html" target="_blank" rel="noopener" class="btn btn-outline" style="flex-shrink:0">ISPreview Full List →</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- MOBILE -->
+<section id="mobile">
+  <div class="section-tag">📱 Mobile</div>
+  <h2>Social Tariff<br>Mobile SIMs</h2>
+  <p class="section-intro">These are barely advertised. Ring up and ask directly. £10/mo for a working SIM with decent data — you could be sorted today.</p>
+
+  <div class="gold-box">
+    <strong>📞 Script — say this exact phrase:</strong><br>
+    "Do you offer a social tariff mobile plan for benefit claimants? I'm on [Universal Credit / PIP / ESA]."
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Plan</th><th>Data / Calls</th><th>Price</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Three</strong></td><td>Social Tariff</td><td>12GB + unlimited</td><td>£10/mo</td><td><span class="avail-yes">⭐ Best data deal</span> — 5G included</td></tr>
+        <tr><td><strong>EE</strong></td><td>Basic Mobile</td><td>5GB + 150 mins</td><td>£10/mo</td><td>UC / PIP eligible</td></tr>
+        <tr><td><strong>Virgin Media O2</strong></td><td>Essential Mobile</td><td>5GB + unlimited mins</td><td>£10/mo</td><td>30-day, no exit fee</td></tr>
+        <tr><td><strong>Vodafone</strong></td><td>Essential Mobile</td><td>5GB + unlimited</td><td>£10/mo</td><td>Rolling contract</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="info-box">
+    <strong>💡 Three is the best deal right now</strong> — 12GB data, unlimited calls, 5G, £10/mo. Call Three and say you're on benefits and want the social tariff SIM.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SWITCHING BONUSES -->
+<section id="switching">
+  <div class="section-tag">💷 Switching Bonuses</div>
+  <h2>Get Paid<br>to Switch</h2>
+  <p class="section-intro">Leaving your current broadband provider can earn you up to £250 cash. Important caveat below.</p>
+
+  <div class="warning-box" style="margin-bottom:2rem">
+    ⚠️ <strong>Social tariff customers are usually excluded from switching bonuses.</strong> These offers are for standard contracts only. If you're on a social tariff — stick with it. The monthly savings beat a one-off bonus.
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Offer</th><th>Value</th><th>Conditions</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Virgin Media</strong></td><td>Switching Credit</td><td>Up to £250</td><td>Pay early termination fees, claim within 60 days</td></tr>
+        <tr><td><strong>Sky</strong></td><td>Switching Credit + Gift Card</td><td>Up to £200</td><td>New broadband+TV, no upfront fees</td></tr>
+        <tr><td><strong>Vodafone</strong></td><td>Switching Credit</td><td>Up to £200</td><td>Pay ETFs, credit check required</td></tr>
+        <tr><td><strong>BT</strong></td><td>Reward Card</td><td>Up to £175</td><td><span class="avail-no">❌ NOT on Home Essentials social tariff</span></td></tr>
+        <tr><td><strong>Hyperoptic</strong></td><td>Switching Credit</td><td>Up to £150</td><td>Full fibre areas only, submit proof</td></tr>
+        <tr><td><strong>Three</strong></td><td>Last Bill Paid</td><td>Up to £150</td><td>Switch 5G Hub home broadband, submit final bill</td></tr>
+        <tr><td><strong>EE</strong></td><td>Switching Credit</td><td>Up to £100</td><td>New Full Fibre customers only</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ENERGY -->
+<section id="energy">
+  <div class="section-tag">⚡ Energy</div>
+  <h2>Cut Your<br>Energy Bills</h2>
+  <p class="section-intro">Most people on benefits don't know half of this exists. All of it is yours by right.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-icon">🌡️</span>
+      <h3>Warm Home Discount — £150</h3>
+      <p>On Pension Credit, UC, or Income Support? You may get £150 off your electricity bill. Check with your supplier — some get it automatically, others need to apply before the deadline.</p>
+      <div class="card-badge badge-gold">💷 £150 off your bill</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">❄️</span>
+      <h3>Cold Weather Payment</h3>
+      <p>Automatic £25 payment when local temperature is at or forecast to be 0°C or below for 7 consecutive days. If you're on qualifying benefits, you should receive it automatically.</p>
+      <div class="card-badge badge-blue">🌨️ Automatic if eligible</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🔋</span>
+      <h3>Emergency Credit</h3>
+      <p>On a prepayment meter and can't top up? Call your supplier — every major UK supplier must provide emergency credit immediately. You repay gradually when you next top up.</p>
+      <div class="card-badge badge-green">📞 Call your supplier now</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🏠</span>
+      <h3>ECO4 — Free Insulation & Boilers</h3>
+      <p>Free home insulation, boiler upgrades, and energy improvements for people on qualifying benefits. Saves hundreds per year. Check eligibility at gov.uk or through your supplier.</p>
+      <div class="card-badge badge-green">🆓 Free home upgrades</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🎟️</span>
+      <h3>CAB Fuel Vouchers</h3>
+      <p>Citizens Advice can provide fuel vouchers for gas and electric — up to 3 times in any 6-month period. Almost nobody knows this. Walk in and ask specifically for fuel vouchers.</p>
+      <div class="card-badge badge-gold">3x per 6 months — free</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">💰</span>
+      <h3>Social Energy Tariff</h3>
+      <p>Some suppliers offer discounted rates for people on low incomes — they don't advertise them. Call your supplier and ask: "Do you have a social tariff for customers on benefits?"</p>
+      <div class="card-badge badge-blue">☎️ Ask your supplier directly</div>
+    </div>
+  </div>
+
+  <div class="cta-card" style="margin-top:2rem">
+    <div><strong>🌡️ Warm Home Discount — Apply Now</strong><p>Check your eligibility and apply before the annual deadline.</p></div>
+    <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank" rel="noopener" class="btn btn-gold" style="flex-shrink:0">Check Eligibility →</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ALL BILLS -->
+<section id="bills">
+  <div class="section-tag">📺 All Bills</div>
+  <h2>Cut Every<br>Other Bill</h2>
+  <p class="section-intro">TV licence, water, council tax, prescriptions — all either free or massively reduced if you're on benefits.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-icon">📺</span>
+      <h3>TV Licence</h3>
+      <p>Free if you're 75+ on Pension Credit. £0 if you only watch Netflix, YouTube, etc and never watch live TV or BBC iPlayer. Millions pay who don't need to.</p>
+      <a href="https://www.tvlicensing.co.uk/check-if-you-need-one" target="_blank" rel="noopener" style="color:var(--gold);font-size:.82rem;text-decoration:none;margin-top:.75rem;display:block">Check if you need one →</a>
+    </div>
+    <div class="card">
+      <span class="card-icon">🚿</span>
+      <h3>Water — WaterSure Scheme</h3>
+      <p>If you have a water meter and use a lot of water (medical condition, 3+ kids), WaterSure caps your bill at the average for your area. Apply directly to your water company.</p>
+      <a href="https://www.ccwater.org.uk/watersure/" target="_blank" rel="noopener" style="color:var(--gold);font-size:.82rem;text-decoration:none;margin-top:.75rem;display:block">WaterSure info →</a>
+    </div>
+    <div class="card">
+      <span class="card-icon">🏛️</span>
+      <h3>Council Tax Reduction</h3>
+      <p>On UC or low income? You may pay zero council tax. Apply directly to your local council — it's not automatic, you have to claim it. Don't miss this one.</p>
+      <a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener" style="color:var(--gold);font-size:.82rem;text-decoration:none;margin-top:.75rem;display:block">Apply for CTR →</a>
+    </div>
+    <div class="card">
+      <span class="card-icon">💊</span>
+      <h3>Free NHS Prescriptions</h3>
+      <p>On UC, ESA, JSA, PIP or Income Support? Your prescriptions are free. Millions overpay because they don't know this. Every prescription, every time.</p>
+      <a href="https://www.nhsbsa.nhs.uk/help-nhs-prescription-costs" target="_blank" rel="noopener" style="color:var(--gold);font-size:.82rem;text-decoration:none;margin-top:.75rem;display:block">Check eligibility →</a>
+    </div>
+    <div class="card">
+      <span class="card-icon">🦷</span>
+      <h3>Free NHS Dental</h3>
+      <p>On qualifying benefits? You're entitled to free NHS dental treatment. Most people don't know this. Tell your dentist you're on benefits before they charge you.</p>
+      <div class="card-badge badge-green">🆓 Free — just tell your dentist</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">📞</span>
+      <h3>Call Before You Struggle</h3>
+      <p>Every bill — energy, broadband, water, rent — call before you fall behind. All providers must offer payment plans by law. Calling early means more options. Don't wait.</p>
+      <div class="card-badge badge-blue">⚖️ They must help — it's law</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- NO EXCUSES -->
+<section id="noexcuses">
+  <div class="section-tag">🏦 No Excuses</div>
+  <h2>No Bank<br>Account?<br>Sorted.</h2>
+  <p class="section-intro">Sick of hearing "I can't do it, I don't have a bank account." You can open one right now, on your phone, in minutes, with no credit check.</p>
+
+  <div class="card-featured">
+    <h3>🏦 Lloyds Basic Account — Free, No Credit Check</h3>
+    <p>A proper Lloyds bank account. No credit check. Free forever. Debit card included. Works for benefits payments, direct debits, everything. Open it today.</p>
+    <div class="tag-row"><span class="tag">No credit check</span><span class="tag">Free forever</span><span class="tag">Debit card included</span><span class="tag">Benefits-friendly</span></div>
+    <a href="https://smallville1979.github.io/lloyds-50/" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:13px">Open Lloyds — Claim £50 →</a>
+  </div>
+
+  <div class="card-featured">
+    <h3>💳 Revolut — Open in 10 Minutes on Your Phone</h3>
+    <p>Download the app, open a free account, get a Visa card. No branch visit needed. Instant spending notifications, budgeting tools, no foreign transaction fees. Then refer yourself and earn cashback.</p>
+    <div class="tag-row"><span class="tag">Open in 10 mins</span><span class="tag">Free plan</span><span class="tag">Visa debit card</span><span class="tag">Refer yourself for cashback</span></div>
+    <a href="https://revolut.com/referral/?referral-code=tomfd6a!MAR1-26-VR-GB&geo-redirect" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:13px">Join Revolut Free →</a>
+  </div>
+
+  <div class="card-featured">
+    <h3>🛍️ Zilch — Spread the Cost, 0% Interest</h3>
+    <p>Spread essential purchases over 6 weeks, 0% interest. 4 equal payments. Open the account, then refer yourself to earn cashback. No excuse not to have this one.</p>
+    <div class="tag-row"><span class="tag">0% interest</span><span class="tag">4 payments</span><span class="tag">Refer yourself</span></div>
+    <a href="https://customers.payzilch.com/signup?inviteCode=YfTRC0" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:13px">Join Zilch Free →</a>
+    <div class="warning-box" style="margin-top:1rem">⚠️ Only use for essentials you can genuinely afford to repay. May affect your credit score.</div>
+  </div>
+
+  <div class="gold-box" style="margin-top:1.5rem;font-size:.95rem">
+    <strong>🔥 You've got the accounts. Now refer yourself.</strong><br><br>
+    Got Lloyds, Revolut, Zilch? Use <strong>your own referral links</strong> and earn cashback on accounts you already have. Stop begging for loans. The tools are already in your hands. Use them.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SHARE -->
+<div class="share-section">
+  <h2>📢 Share This</h2>
+  <p>Someone you know is overpaying right now. Send them this page — it's free and could save them hundreds.</p>
+  <div class="share-btns">
+    <a href="https://wa.me/?text=This+free+guide+shows+how+to+get+cheap+social+tariff+broadband+and+cut+your+bills+if+you%27re+on+benefits%3A+https%3A%2F%2Fsmallville1979.github.io%2Fsocial-tariffs%2F" target="_blank" rel="noopener" class="share-btn whatsapp">💬 WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallville1979.github.io%2Fsocial-tariffs%2F" target="_blank" rel="noopener" class="share-btn facebook">👍 Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallville1979.github.io%2Fsocial-tariffs%2F&text=Social+tariff+broadband+from+%C2%A312.50%2Fmo+if+you%27re+on+benefits+%F0%9F%92%B7+Full+guide+here" target="_blank" rel="noopener" class="share-btn">🐦 Twitter</a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsmallville1979.github.io%2Fsocial-tariffs%2F&title=Social+tariff+broadband+%2B+mobile+SIMs+%2B+bill+cutting+guide+for+benefit+claimants" target="_blank" rel="noopener" class="share-btn">🔴 Reddit</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Skint But Sorted 💛</div>
+  <p>
+    Free advice for everyone who needs it. Share this page with someone who could use it right now.<br><br>
+    Part of the <strong>Skint But Sorted</strong> network —
+    <a href="https://smallville1979.github.io/benefits-guide/">💛 Benefits Guide</a> ·
+    <a href="https://smallville1979.github.io/emergency/">🚨 Emergency Help</a> ·
+    <a href="https://smallville1979.github.io/ukscamwatch/">⚠️ UK Scam Watch</a> ·
+    <a href="https://smallville1979.github.io/uk-jobs-guide/">💼 Jobs Guide</a><br><br>
+    ⏱️ <strong>This site takes 1 hour to fully read.</strong> Click every link. View every page.<br><br>
+    Built with ❤️ for everyone going through a hard time
+  </p>
+</footer>
+
+<script src="https://smallville1979.github.io/kit/kit.js"></script>
+</body>
+</html>
